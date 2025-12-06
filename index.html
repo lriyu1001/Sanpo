@@ -399,4 +399,20 @@
         if (result.waypoints && result.waypoints.length > 0) {
             // パイプ(|)で区切る
             const joinedWaypoints = result.waypoints.map(wp => encodeURIComponent(wp)).join('|');
-            waypointsParam = `&waypoints=${joinedWaypoints
+            waypointsParam = `&waypoints=${joinedWaypoints}`;
+        }
+
+        const fullUrl = baseUrl + origin + destination + waypointsParam + "&travelmode=walking";
+        
+        const linkBtn = document.getElementById('google-maps-link');
+        linkBtn.href = fullUrl;
+
+        document.getElementById('result-area').style.display = 'block';
+        
+        // 結果までスクロール
+        document.getElementById('result-area').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
