@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIキーの取得方法</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { color: #4facfe; text-align: center; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { font-size: 1.2rem; color: #555; margin-top: 30px; }
+        .step { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #4facfe;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .btn:hover { opacity: 0.9; }
+        .link-text { color: #4facfe; font-weight: bold; }
+        img { max-width: 100%; border: 1px solid #ddd; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>🔑 Gemini APIキーの取得方法</h1>
+    <p>このアプリを使うには、Googleが提供する「Gemini APIキー（無料）」が必要です。以下の手順で取得してください。</p>
+
+    <div class="step">
+        <h2>ステップ 1</h2>
+        <p>以下のリンクを押して、Google AI Studioにアクセスします。</p>
+        <p>👉 <a href="https://aistudio.google.com/app/apikey" target="_blank" class="link-text">Google AI Studio (公式サイト)</a></p>
+        <p><small>※Googleアカウントでのログインが必要です。</small></p>
+    </div>
+
+    <div class="step">
+        <h2>ステップ 2</h2>
+        <p>画面左上の大きなボタン <strong>「Create API key」</strong> をクリックします。</p>
+    </div>
+
+    <div class="step">
+        <h2>ステップ 3</h2>
+        <p>出てきたリストから <strong>「Create API key in new project」</strong> を選びます。</p>
+        <p><small>※数秒待つとキーが生成されます。</small></p>
+    </div>
+
+    <div class="step">
+        <h2>ステップ 4</h2>
+        <p>生成されたキーを <strong>「Copy」</strong> ボタンでコピーし、このアプリの入力欄に貼り付けてください。</p>
+    </div>
+
+    <a href="index.html" class="btn">アプリに戻る</a>
+
+</body>
+</html>
